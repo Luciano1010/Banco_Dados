@@ -1,0 +1,42 @@
+CREATE DATABASE db_RH;
+
+USE db_RH;
+
+CREATE TABLE tb_RH(
+ id BIGINT IDENTITY(1,1),
+ Nome VARCHAR(255) NOT NULL,
+ Idade INT,
+ Salario DECIMAL NOT NULL,
+ Cargo VARCHAR(255) NOT NULL,
+ Inicio_de_empresa Date,
+ Primary Key(id)
+);
+
+INSERT INTO tb_RH
+(nome,Idade,Salario,Cargo,Inicio_de_empresa)
+VALUES
+('LUCIANO SIMÕES',29,2500,'DEV JUNIOR','2021-02-01'),
+('MATEUS SALOMAO',22,7500,'DEV SENIOR','2019-03-04'),
+('RICARDO CHAVES', 25,1500,'ASSISTENTE','2020-06-1'),
+('DIEGO PIRES', 24,1100,'AUX.LIMPEZA','2023-05-02'),
+('PAULO CEZAR',26,3000,'DEV PLENO','2021-06-23');
+
+SELECT * FROM tb_RH;
+ALTER TABLE Tb_RH ALTER COLUMN salario Decimal(6,2);
+
+SELECT * FROM tb_RH WHERE Salario > 2000
+SELECT * FROM tb_RH WHERE Salario < 2000
+
+DELETE FROM tb_RH WHERE id = 6
+DELETE FROM tb_RH WHERE id = 7
+DELETE FROM tb_RH WHERE id = 8
+DELETE FROM tb_RH WHERE id = 9 OR id = 5 OR id = 10 or id = 11 or id = 12 or id = 13 or id = 14
+
+
+UPDATE tb_RH SET Salario = 3000 WHERE id = 15;
+
+
+
+
+
+
