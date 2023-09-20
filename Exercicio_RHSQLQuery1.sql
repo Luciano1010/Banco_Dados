@@ -24,16 +24,16 @@ VALUES
 SELECT * FROM tb_RH;
 ALTER TABLE Tb_RH ALTER COLUMN salario Decimal(6,2);
 
-SELECT * FROM tb_RH WHERE Salario > 2000
-SELECT * FROM tb_RH WHERE Salario < 2000
+SELECT * FROM tb_RH WHERE Salario > 2.000
+SELECT * FROM tb_RH WHERE Salario < 2.000
 
 DELETE FROM tb_RH WHERE id = 6
 DELETE FROM tb_RH WHERE id = 7
 DELETE FROM tb_RH WHERE id = 8
-DELETE FROM tb_RH WHERE id = 9 OR id = 5 OR id = 10 or id = 11 or id = 12 or id = 13 or id = 14
+DELETE FROM tb_RH WHERE id = 9 OR id = 5 OR id = 10 or id = 11 or id = 12 or id = 13
 
 
-UPDATE tb_RH SET Salario = 3000 WHERE id = 15;
+
 
 
 

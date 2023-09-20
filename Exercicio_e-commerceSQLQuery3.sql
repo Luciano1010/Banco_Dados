@@ -24,6 +24,8 @@ VALUES
 ('Chuteira de Futsal','Nike','Chuteira de Futsal total 90', 40, 120),
 ('Casaco de Clubes','Real Madri','Casaco de treino do Rea Madri com Gola personalizada', 110,400);
 
+
+
 SELECT * FROM tb_ecommerce;
 SELECT * FROM tb_ecommerce WHERE PRECO > 500;
 SELECT * FROM tb_ecommerce WHERE PRECO < 500;

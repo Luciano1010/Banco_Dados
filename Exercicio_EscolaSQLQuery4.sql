@@ -1,14 +1,14 @@
 CREATE DATABASE db_Escola;
-
+GO -- serve pra reaproveitar a escrita em outro banco de dados
 USE db_Escola;
-
+GO -- 
 CREATE TABLE tb_Escola(
 id BIGINT IDENTITY (1,1),
 Nome VARCHAR(255) NOT NULL,
 Idade INT NOT NULL,
 Serie INT NOT NULL,
 NomedosPais	VARCHAR (255) NOT NULL,
-Notas DECIMAL NOT NULL,
+Notas DECIMAL (6,1) NOT NULL,
 PRIMARY KEY (id)
 );
 
@@ -25,7 +25,7 @@ VALUES
 ('Breno',10, 8,'Luciano A' ,7.8);
 
 
-ALTER TABLE Tb_escola ALTER COLUMN Notas Decimal(6,2);
+
 
 SELECT * FROM tb_Escola;
 SELECT * FROM tb_Escola WHERE Notas > 7;
